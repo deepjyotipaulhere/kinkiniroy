@@ -1,55 +1,41 @@
 <template>
   <div>
+    <div class="shadow">
+      <div class="text-center" style="margin: 1em;margin-bottom:0"><img src="/img/kinkini.jpg" width="200px" height="auto"></div>
+      <nav class="navbar navbar-light navbar-expand-md">
+          <div class="d-flex w-50 order-2 justify-content-center">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+          <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+              <ul class="navbar-nav">
+                  <li class="nav-item p-2">
+                      <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
+                  </li>
+                  <li class="nav-item p-2">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item p-2">
+                      <a class="nav-link" href="#">Quillings</a>
+                  </li>
+                  <li class="nav-item p-2">
+                      <a class="nav-link" href="#">Earrings</a>
+                  </li>
+                  <li class="nav-item p-2">
+                      <a class="nav-link" href="#">Embroideries</a>
+                  </li>
+                  <li class="nav-item p-2">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last"></span>
+      </nav>
+    </div>
     <nuxt />
   </div>
 </template>
 
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
 </style>
