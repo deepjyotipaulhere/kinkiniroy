@@ -51,7 +51,7 @@ def updatephoto():
         photo=con.kinkiniroy.photos
         p=request.get_json()
         from bson.objectid import ObjectId
-        x=photo.update_one({ "_id": ObjectId(p["_id"]) }, { "$set": { "title": str(p['title']), "price": str(p['price']),"description": str(p['description']) } })
+        x=photo.update_one({ "_id": ObjectId(p["_id"]) }, { "$set": { "title": str(p['title']), "price": str(p['price']),"description": str(p['description']),"category": str(p['cat']) } })
         return "ok"
     except Exception as ex:
         print(ex)

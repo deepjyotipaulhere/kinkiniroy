@@ -6,9 +6,10 @@
             <br>
             <div class="card shadow">
                 <div class="card-body">
-                    <select name="category" id="" class="form-select" style="float:right">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
+                    <select name="category" id="" class="custom-select" style="float:right;width:200px" v-model="selectedcategory">
+                        <option value="quillings">Quillings</option>
+                        <option value="earrings">Earrings</option>
+                        <option value="embroideries">Embroideries</option>
                     </select>
                     <h5 class="card-title">Select images</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Select images to upload products</h6>
@@ -77,7 +78,8 @@ export default {
             myFiles: [],
             url: process.env.baseURL,
             uploading:[],
-            uploaded:[]
+            uploaded:[],
+            selectedcategory:'quillings',
         };
     },
     methods: {
@@ -92,6 +94,7 @@ export default {
                     datax.title=''
                     datax.price=''
                     datax.description=''
+                    datax.cat=this.selectedcategory
                     this.uploaded.push(datax)
                 })
             });

@@ -17,13 +17,13 @@
                       <a class="nav-link" href="#">About</a>
                   </li>
                   <li class="nav-item p-2">
-                      <a class="nav-link" href="#">Quillings</a>
+                      <nuxt-link class="nav-link" to="/quillings">Quillings</nuxt-link>
                   </li>
                   <li class="nav-item p-2">
-                      <a class="nav-link" href="#">Earrings</a>
+                      <nuxt-link class="nav-link" to="/earrings">Earrings</nuxt-link>
                   </li>
                   <li class="nav-item p-2">
-                      <a class="nav-link" href="#">Embroideries</a>
+                      <nuxt-link class="nav-link" to="/embroideries">Embroideries</nuxt-link>
                   </li>
                   <li class="nav-item p-2">
                       <a class="nav-link" href="#">Contact</a>
@@ -36,6 +36,34 @@
     <nuxt />
   </div>
 </template>
+
+<script>
+export default {
+    head:{
+        meta:[
+            { name: 'description', content: 'Kinkini Roy Art Emporium and Gallery' },
+            { name: 'og:title', content: 'Kinkini Roy Art Emporium and Gallery' },
+            { name: 'og:url', content: 'http://www.kinkiniroy.com' },
+            { name: 'og:description', content: 'Kinkini Roy Art Emporium and Gallery' },
+            { name: 'og:type', content: 'website' },
+
+            { name: 'og:image', content: '/cover.jpg' },
+            { name: 'og:image:type', content: 'image/jpg' },
+            { name: 'og:image:width', content: '1200' },
+            { name: 'og:image:height', content: '630' },
+
+            { name: 'og:image', content: '/whatsappcover.jpg' },
+            { name: 'og:image:type', content: 'image/jpg' },
+            { name: 'og:image:width', content: '400' },
+            { name: 'og:image:height', content: '400' },
+
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:description', content: 'Kinkini Roy Art Emporium and Gallery' },
+            { name: 'twitter:image', content: '/cover.jpg' },
+        ]
+    }
+}
+</script>
 
 <style>
 </style>
