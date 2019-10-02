@@ -41,13 +41,17 @@ export default {
   */
   plugins: [
   ],
-
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
   ],
 
+  axios: {
+    baseURL:"http://localhost:5000"
+    // baseURL:"http://www.wideeyedwanderer.in/api"
+  },
   /*
   ** Build configuration
   */
@@ -57,5 +61,9 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+  env:{
+    baseURL: 'http://localhost:5000',
+    // baseURL: 'http://www.wideeyedwanderer.in/api',
   }
 }
