@@ -49,8 +49,8 @@ export default {
   ],
 
   axios: {
-    baseURL:"http://localhost:5000"
-    // baseURL:"http://www.kinkiniroy.com/api"
+    // baseURL:"http://localhost:5000"
+    baseURL:"http://www.kinkiniroy.com/api"
   },
   /*
   ** Build configuration
@@ -63,7 +63,7 @@ export default {
     }
   },
   env:{
-    baseURL: 'http://localhost:5000',
-    // baseURL: 'http://www.kinkiniroy.com/api',
+    // baseURL: 'http://localhost:5000',
+    baseURL: 'http://www.kinkiniroy.com/api',
   }
 }

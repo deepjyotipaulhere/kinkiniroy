@@ -26,7 +26,7 @@
                       <nuxt-link class="nav-link" to="/embroideries">Embroideries</nuxt-link>
                   </li>
                   <li class="nav-item p-2">
-                      <a class="nav-link" href="#">Contact</a>
+                      <nuxt-link class="nav-link" to="/contact">Contact</nuxt-link>
                   </li>
               </ul>
           </div>
