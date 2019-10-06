@@ -16,7 +16,9 @@ def savephotos():
         import random
         filename = secure_filename(str(random.randint(1,10000))+x.filename)
         x.save(os.path.join(image_save_path, filename))
-        
+        from PIL import Image
+        image=Image.open(os.path.join(image_save_path, filename))
+        image.save(os.path.join(image_save_path, filename),quality=20,optimize=True)
         photo=con.kinkiniroy.photos
         photoid=photo.insert_one({'path':filename})
         return str(photoid.inserted_id)
