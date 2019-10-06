@@ -2,6 +2,7 @@
     <div>
         <div class="container mt-4">
             <button type="button" class="btn btn-outline-danger mr-2" style="float:right"><i class="fas fa-power-off"></i> Sign Out</button>
+            <nuxt-link to="/edit" class="btn btn-outline-info mr-2" style="float:right"><i class="fas fa-power-off"></i> Edit Photos</nuxt-link>
             <h4 class="ml-2">Welcome, Kinkini</h4>
             <br>
             <div class="card shadow">
