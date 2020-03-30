@@ -9,6 +9,8 @@
                 </div>
                 <div class="col-lg-6 col-md-4 col-sm-12">
                     <h2 class="mb-4 mt-4">{{photo.title}}</h2>
+                    <h6 class="mb-4">Size: {{photo.size}}</h6>
+                    <p v-if="photo.color">Color: {{photo.color}}</p>
                     <p class="mb-4 text-muted">{{photo.description}}</p>
                     <p style="font-size:xx-large" class="mt-4">&#8377; {{photo.price}}</p>
                 </div>

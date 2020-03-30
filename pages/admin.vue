@@ -52,7 +52,13 @@
                                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Price" v-model="x.price">
                                 </div>
                                 <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Color" v-model="x.color">
+                                </div>
+                                <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter description" v-model="x.description"></textarea>
+                                </div>
+                                <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter size" v-model="x.size">
                                 </div>
                             </div>
                         </div>
@@ -95,6 +101,8 @@ export default {
                     datax.title=''
                     datax.price=''
                     datax.description=''
+                    datax.size=''
+                    datax.color=''
                     datax.cat=this.selectedcategory
                     this.uploaded.push(datax)
                 })
